@@ -1,0 +1,55 @@
+/* For small devices */
+@media (max-width: 576px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+/* For medium devices */
+@media (min-width: 576px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+/* For large devices */
+@media (min-width: 992px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+/* For extra large devices */
+@media (min-width: 1200px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 20px;
+  background-color: seagreen;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.active {
+  background-color: #fff;
+  color: #333;
+}

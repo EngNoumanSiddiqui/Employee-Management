@@ -1,0 +1,38 @@
+<header>
+  <nav>
+    <button type="button"  pButton label="Employee List Component" (click)="employeeList()">Employee List Component</button>
+    <button type="button"  pButton label="Add Employee Component" (click)="AddEmployee()">Add Employee Component</button>
+  </nav>
+</header>
+
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: rgb(255, 255, 255)">Loading...</p>
+</ngx-spinner>
+
+<div class="table-responsive">
+  <table class="table table-success table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Department</th>
+        <th>Created At</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{ employee.id }}</td>
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.salary }}</td>
+        <td>{{ employee.department }}</td>
+        <td>{{ employee.createdAt }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

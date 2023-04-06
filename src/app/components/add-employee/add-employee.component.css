@@ -1,0 +1,83 @@
+/* Styles for AddEmployeeComponent form */
+
+/* Center the form on the page */
+.form-horizontal {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+/* Add some padding and margin to the form elements */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.control-label {
+  font-weight: bold;
+}
+
+/* Style the input elements */
+.form-control {
+  border-radius: 0;
+}
+
+/* Add some space between the label and input elements */
+.form-group label {
+  padding-top: 7px;
+  margin-bottom: 0;
+}
+
+/* Style the submit button */
+.btn-primary {
+  border-radius: 0;
+}
+
+/* Make the form responsive for small screens */
+@media (max-width: 767px) {
+  .form-horizontal {
+    max-width: 100%;
+  }
+
+  .form-group label {
+    margin-bottom: 7px;
+  }
+}
+
+.container {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 20px;
+  background-color: seagreen;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.active {
+  background-color: #fff;
+  color: #333;
+}
+
